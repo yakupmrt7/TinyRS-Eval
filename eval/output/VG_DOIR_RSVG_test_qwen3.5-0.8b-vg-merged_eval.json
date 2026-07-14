@@ -1,0 +1,15 @@
+{
+    "dataset": "VG_DOIR_RSVG_test",
+    "model": "qwen3.5-0.8b-vg-merged",
+    "num_samples": 7500,
+    "num_boxes": 7500,
+    "iou_threshold": 0.5,
+    "bbox_normalize_bound": 800.0,
+    "precision": 0.7565333333333333,
+    "precision_S": 0.46325167037861914,
+    "count_S": 1347,
+    "precision_M": 0.717505995203837,
+    "count_M": 2085,
+    "precision_L": 0.8736479842674533,
+    "count_L": 4068
+}

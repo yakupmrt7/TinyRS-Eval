@@ -1,0 +1,6 @@
+{
+    "dataset": "cls_AID",
+    "model": "qwen3.5-0.8b-cls-merged",
+    "num_samples": 3000,
+    "accuracy": 0.9156666666666666
+}

@@ -1,0 +1,6 @@
+{
+    "dataset": "cls_SIRI_WHU",
+    "model": "qwen3.5-0.8b-cls-merged",
+    "num_samples": 2400,
+    "accuracy": 0.7295833333333334
+}

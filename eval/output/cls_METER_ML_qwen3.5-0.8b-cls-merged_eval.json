@@ -1,0 +1,6 @@
+{
+    "dataset": "cls_METER_ML",
+    "model": "qwen3.5-0.8b-cls-merged",
+    "num_samples": 565,
+    "accuracy": 0.6902654867256637
+}

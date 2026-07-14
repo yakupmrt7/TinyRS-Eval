@@ -1,0 +1,6 @@
+{
+    "dataset": "RSVQA_LR-rural_urban_RSVQA",
+    "model": "qwen3.5-0.8b-vqa-merged",
+    "num_samples": 100,
+    "accuracy": 0.92
+}

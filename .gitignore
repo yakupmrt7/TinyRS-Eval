@@ -1,1 +1,13 @@
 .DS_Store
+
+# Eval artifacts. The per-sample prediction dumps and SLURM logs are large and
+# regenerable; the small *_eval.json metric files are the actual results, so they
+# stay tracked.
+eval/output/*.jsonl
+eval/output/*.out
+eval/output/*.err
+!eval/output/*_eval.json
+
+# Python
+__pycache__/
+*.py[cod]
