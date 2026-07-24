@@ -1,0 +1,7 @@
+{
+    "dataset": "RSVQA_LR-presence_RSVQA",
+    "model": "qwen3.5-0.8b-mixed-vqa-think",
+    "num_samples": 950,
+    "accuracy": 0.8052631578947368,
+    "malformed_outputs": 0
+}

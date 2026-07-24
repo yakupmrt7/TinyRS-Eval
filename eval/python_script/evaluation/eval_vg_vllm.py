@@ -49,6 +49,9 @@ def arg_parser():
     p.add_argument("--iou_threshold", type=float, default=0.5)
     p.add_argument("--bbox_normalize_bound", type=float, default=800,
                    help="range the model emits boxes in; Re-CoT VG is trained on 0-800")
+    p.add_argument("--enable_thinking", action="store_true",
+                   help="open Qwen3.5's native <think> block (thinking-mode eval of mixed "
+                        "models); omit for direct-answer mode")
     return p.parse_args()
 
 
@@ -150,7 +153,8 @@ def main():
             {"type": "text", "text": question},
         ]}]
         prompt = processor.apply_chat_template(
-            messages, tokenize=False, add_generation_prompt=True
+            messages, tokenize=False, add_generation_prompt=True,
+            enable_thinking=args.enable_thinking,
         )
         llm_inputs.append({"prompt": prompt, "multi_modal_data": {"image": image}})
         records.append({"filename": str(img_path), "size": [h, w],

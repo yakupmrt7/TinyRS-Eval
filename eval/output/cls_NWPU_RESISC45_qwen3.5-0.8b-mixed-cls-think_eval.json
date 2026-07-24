@@ -1,0 +1,7 @@
+{
+    "dataset": "cls_NWPU_RESISC45",
+    "model": "qwen3.5-0.8b-mixed-cls-think",
+    "num_samples": 3150,
+    "accuracy": 0.86,
+    "malformed_outputs": 0
+}

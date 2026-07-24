@@ -1,0 +1,7 @@
+{
+    "dataset": "cls_AID",
+    "model": "qwen3.5-0.8b-grpo-cls-merged",
+    "num_samples": 3000,
+    "accuracy": 0.894,
+    "malformed_outputs": 0
+}

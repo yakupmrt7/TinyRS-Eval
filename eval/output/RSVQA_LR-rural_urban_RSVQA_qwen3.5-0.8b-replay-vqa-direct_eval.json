@@ -1,0 +1,7 @@
+{
+    "dataset": "RSVQA_LR-rural_urban_RSVQA",
+    "model": "qwen3.5-0.8b-replay-vqa-direct",
+    "num_samples": 100,
+    "accuracy": 0.9,
+    "malformed_outputs": 0
+}

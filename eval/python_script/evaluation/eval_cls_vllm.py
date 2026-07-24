@@ -41,6 +41,10 @@ def arg_parser():
     p.add_argument("--template_config", default=None,
                    help="json holding a `meta_instruction` to send as the system message "
                         "(e.g. config/qwen2_thinking_template.json for CoT models)")
+    p.add_argument("--enable_thinking", action="store_true",
+                   help="open Qwen3.5's native <think> block (add_generation_prompt yields "
+                        "'<think>\\n' instead of the closed '<think>\\n\\n</think>'). Use for "
+                        "thinking-mode eval of mixed models; omit for direct-answer mode.")
     return p.parse_args()
 
 
@@ -127,7 +131,8 @@ def evaluate_dataset(anns_json, args, data_root, model_name, out_dir, processor,
             {"type": "text", "text": question},
         ]})
         prompt = processor.apply_chat_template(
-            messages, tokenize=False, add_generation_prompt=True
+            messages, tokenize=False, add_generation_prompt=True,
+            enable_thinking=args.enable_thinking,
         )
         llm_inputs.append({"prompt": prompt, "multi_modal_data": {"image": image}})
         records.append({"filename": str(img_path), "query": question, "answer": answer})

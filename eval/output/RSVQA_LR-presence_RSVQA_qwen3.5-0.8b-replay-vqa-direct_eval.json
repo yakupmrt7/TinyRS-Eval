@@ -1,0 +1,7 @@
+{
+    "dataset": "RSVQA_LR-presence_RSVQA",
+    "model": "qwen3.5-0.8b-replay-vqa-direct",
+    "num_samples": 950,
+    "accuracy": 0.8852631578947369,
+    "malformed_outputs": 0
+}

@@ -1,0 +1,7 @@
+{
+    "dataset": "RSVQA_HR-comp_RSVQA",
+    "model": "qwen3.5-0.8b-replay-vqa-think",
+    "num_samples": 1000,
+    "accuracy": 0.735,
+    "malformed_outputs": 0
+}

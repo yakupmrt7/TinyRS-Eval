@@ -1,0 +1,7 @@
+{
+    "dataset": "cls_WHU_RS19",
+    "model": "qwen3.5-0.8b-cot-cls-merged",
+    "num_samples": 1000,
+    "accuracy": 0.955,
+    "malformed_outputs": 0
+}

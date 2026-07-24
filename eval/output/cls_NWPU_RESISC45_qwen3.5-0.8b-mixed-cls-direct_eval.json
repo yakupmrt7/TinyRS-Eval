@@ -1,0 +1,7 @@
+{
+    "dataset": "cls_NWPU_RESISC45",
+    "model": "qwen3.5-0.8b-mixed-cls-direct",
+    "num_samples": 3150,
+    "accuracy": 0.8965079365079365,
+    "malformed_outputs": 0
+}
